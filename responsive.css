@@ -1,0 +1,1390 @@
+/* Mobile screen */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    nav {
+        width: 100%;
+        color: rgb(27, 26, 26, 0.25);
+        padding: 2rem;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+
+    
+
+    .menu-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        background-color: rgb(24, 23, 23, 0.15);
+        border: none;
+        margin-right: 6px;
+
+        
+    }
+   .btn{
+    display: none;
+   }
+   
+   .btn-2, .btn-3{
+    display: block;
+   }
+
+    .search svg{
+        display: none;
+    }
+
+    .menu-btn span {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        
+    }
+      #navmenu .submenu  {
+        display: none;
+        position: static;
+        width: 100%;
+        background: #292626;
+        padding-left: 15px;
+    }
+
+    #navmenu .dropdown.open > .submenu {
+        display: block;
+    }
+
+    #navmenu .dropdown > a {
+        display: block;
+        padding: 15px 0;
+    }
+    
+        
+    .menu-btn.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+
+    .menu-btn.active span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+
+
+    .menu-btn.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    
+ nav ul{
+        position: fixed;
+        top: 0;
+        right: -300px;
+
+         width: 300px;
+        height: 100vh;
+
+        background-color: rgb(24, 23, 23, 0.95);
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 100px 30px;
+        gap: 25px;
+
+        transition: right 0.4s ease;
+    }
+
+    nav ul.active {
+        right: 0;
+    }
+    .submenu{
+        height: 220px;
+    }
+ 
+
+    .banner {
+        width: 100%;
+        height: auto;
+        min-height: 430px;
+        background-image: url(../img/plum.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner-para {
+        width: 100%;
+        max-width: 100%;
+        left: 0;
+        margin-left: 0;
+        padding: 0 2.2rem;
+    }
+
+    .banner-para h2 {
+        width: 80%;
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .experts h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        padding-top: 0;
+    }
+
+    .repair {
+        display: block;
+        background-color: rgb(245, 237, 226);
+        width: 100%;
+    }
+
+    .online-services {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+
+    .box-1,
+    .box-2,
+    .box {
+        width: 100%;
+        flex: none;
+        
+    }
+    .box{
+        flex-direction: row;
+        flex: none;
+        width: 100%;
+    }
+
+    .box-2{
+        padding: 0 24px 24px;
+    }
+
+    .box-2 p {
+        width: 100%;
+        margin-bottom: 28px;
+        font-size: 20px;
+
+    }
+    .box-1,
+    .box-2{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .box h3{
+        padding: 12px 0;
+    }
+    .box h2{
+        font-size: 28px;
+    }
+    .box p{
+        padding-bottom: 12px;
+        padding-top: 0;
+    }
+    .img-box{
+        height: 400px;
+    }
+    .img-box img{
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+    .section{
+        padding-bottom: 24px;
+    }
+
+    .home-design {
+        flex-direction: column;
+    }
+
+    .home-repair h2 {
+        font-size: 28px;
+        width: 80%;
+        
+    }
+
+    .home-repair p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .area {
+        width: 100%;
+    }
+    .line{
+        height: 5px;
+
+    }
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
+
+    .div-box {
+        flex-direction: column;
+    }
+
+    .portfolio-head{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .client-service {
+        width: 100%;
+        flex: 0 0 100%;
+        padding: 0;
+        padding-left: 0.75rem;
+    }
+  
+
+    .team-work {
+        width: 96%;
+        margin: 0 2%;
+        flex-direction: column;
+    }
+
+    .types h2 {
+        font-size: 28px;
+        width: 100%;
+        margin-bottom: 1.7rem;
+        margin-top: 4px;
+
+    }
+    iframe{}
+  
+    .empower h3{
+        font-size: 24px;
+        margin-bottom: 16px;
+
+    }
+    .innovation-card h4{
+        margin: 16px 0;
+    }
+    small{
+        font-size: 10px;
+    }
+
+    .types h4 {
+        font-size: 1rem;
+    }
+    .portfolio,
+     .service-card,
+     .services,
+      .empower{
+        width: 90%;
+        margin: 5%;
+    }
+    .empower{
+        width: 90%;
+        margin: 10% auto;
+
+    }
+    
+    .icon svg{
+        height: 30px;
+        width: 30px;
+    }
+    .card{
+        padding: 20px;
+        
+    }
+    .card-para h3{
+        margin-top: 20px;
+    }
+    .card-para p{
+        padding: 16px 0;
+        font-size: 16px;
+
+    }
+    .orange-banner{
+        padding:28px  12px;
+    }
+    .client h4 {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+    .user-img img{
+        height: 45px;
+        width: 45px;
+    }
+    .client h2 {
+        font-size: 28px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .commas img{
+        height: 40px;
+        width: 40px;
+    }
+    .client-service p{
+        font-size: 16px;
+       
+    }
+      .first-img,
+    .second-img{
+        height: 300px;
+    }
+    .customers-id{
+        padding: 24px;
+    }
+
+    .customer-order h4 {
+        font-size: 1rem;
+    }
+     
+    .customer-order h2 {
+        font-size: 28px;
+        width: 100%;
+        margin: 14px 0;
+        margin-top: 4px;
+    }
+    .left-side p{
+        font-size: 14px;
+        line-height: normal;    
+    }
+    .portfolio-head{
+        flex-direction: column;
+    }
+
+    .portfolio-head h2 {
+        font-size: 28px;
+        width: 100%;
+    }
+    iframe{
+        height: 300px;
+        width: 90%;
+        margin: 5%;
+        border-radius: 0;
+    }
+
+    .worker {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .worker-img {
+        width: 100%;
+        height: 200px;
+        
+    }
+    .worker-img{
+        width: 45%;
+        gap: 15px;
+         flex-direction: row;
+         flex-wrap: wrap;
+    }
+   
+    .team-rate {
+        width: 100%;
+        padding: 24px 16px;
+    }
+
+    .team-rate h2 {
+        font-size: 32px;
+        line-height: normal;
+    }
+        
+.slider-arrow{
+    display: none;
+}
+.slide-content{
+    width: 100%;
+    margin: 0;
+}
+
+    .innovation-card {
+        flex-direction: column;
+    }
+
+    .innovation-card .first-card,
+    .innovation-card .second-card {
+        width: 100%;
+        flex: none;
+    }
+    
+
+    .footer-head {
+        flex-direction: column;
+    }
+
+    .logo-hirefix,
+    .experts {
+        width: 100%;
+    }
+    .logo-hirefix{
+        margin-top: 28px;
+    }
+    .about-link{
+        padding: 0;
+    }
+  
+   
+
+    .about-link .para,
+    .about-link .official {
+        width: 100%;
+    }
+    .about-link .service-link,
+    .about-link .social-link{
+        width: 45%;
+    
+    }
+    .social-link h3{
+        padding-bottom: 24px;
+    }
+    .social-link{
+        padding-bottom: 24px;
+    }
+
+    .footer {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .footer-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-hirefix,
+    .experts {
+        width: 100%;
+    }
+
+    .experts {
+        justify-content: flex-start;
+    }
+
+    .experts h2 {
+        width: 100%;
+        font-size: 32px;
+        padding: 0 0 20px;
+    }
+    .para button{
+        margin-bottom: 12px;
+    }
+    .about-link {
+       flex-direction: column;
+
+    }
+
+    .service-link ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .service-link li {
+        display: block;
+    }
+
+    .social-link {
+        position: static;
+        width: 100%;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    
+    .para h3,
+    .official h3,
+    .service-link h3,
+    .social-link h3{
+        color: white;
+    }
+    .para,
+    .official,
+    .service-link,
+    .social-link {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .para p {
+        font-size: 16px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .service-link,
+    .social-link {
+        line-height: 35px;
+    }
+
+    .footer-head {
+        padding: 0;
+    }
+
+    .foot {
+        width: 90%;
+        margin: 0 5%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+    nav{
+        width: 100%;
+        padding: 1.5rem;
+    }
+}
+/* ONLY DIFFERENT FOR max-width: 412px */
+
+@media (max-width: 412px) {
+
+    h2 {
+        line-height: 1;
+    }
+    nav {
+        width: 100%;
+        color: rgb(27, 26, 26, 0.25);
+        padding: 12px;
+    }
+
+    nav ul {
+        right: -240px;
+        width: 220px;
+        height: 100vh;
+        gap: 15px;
+    }
+    .menu-btn{
+        gap: 4px;
+    }
+
+    .menu-btn span {
+        width: 18px;
+        height: 2.5px;
+        background-color: white;
+    
+    }
+
+    .submenu {
+        padding: 12px;
+        height: 180px;
+    }
+
+    .banner {
+        height: 400px;
+    }
+
+    .banner-para button {
+        padding: 12px 18px;
+    }
+
+    .banner-para h2 {
+        font-size: 28px;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+    
+
+    .img-box {
+        height: 300px;
+    }
+
+    .home-repair h2 {
+        font-size: 20px;
+        padding: 24px 0 20px;
+        width: 100%;
+    }
+
+    .home-repair p {
+        font-size: 14px;
+    }
+
+    .types h2 {
+        font-size: 24px;
+    }
+
+    .card-para h3 {
+        font-size: 18px;
+    }
+
+    .card-para p {
+        font-size: 14px;
+    }
+
+    .client h2 {
+        font-size: 24px;
+        line-height: 1;
+        margin-top: 4px;
+    }
+
+    .client-service p {
+        font-size: 14px;
+        line-height: normal;
+      
+    }
+    .client-service>p{
+        padding:  24px 12px 12px;
+    }
+
+    .user h2 {
+        font-size: 18px;
+    }
+    
+    .customers-id {
+        padding: 20px 12px;
+    }
+
+    .customer-order h2 {
+        font-size: 24px;
+        margin: 4px 0 14px;
+    }
+  
+    .portfolio-head h2 {
+        font-size: 24px;
+        margin-top: 4px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    .dots {
+        padding: 12px;
+    }
+    .innovation-card h4{
+        margin-bottom: 4px;
+    }
+    .empower h3{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .empower h5{
+        font-size: 12px;
+    }
+    .first-card,
+    .second-card{
+     flex: none;
+     width: 100%;
+     
+    }
+    .first-img,
+    .second-img{
+        height: 200px;
+    }
+    .second-img{
+        height: 200px;
+    }
+
+    .team-rate h2 {
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+
+    .team-rate p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .team-rate button {
+        padding: 12px 18px;
+    }
+    
+.slider-arrow{
+    height: 20px;
+    width: 20px;
+}
+
+    .logo-hirefix {
+        margin-top: 24px;
+    }
+
+    .experts h2 {
+        padding: 0;
+    }
+
+    .about-link {
+        flex-direction: column;
+        gap: 30px;
+        padding: 28px 0;
+    }
+
+    .para button {
+        padding: 12px 16px;
+    }
+
+    .para h3,
+    .official h3,
+    .service-link h3,
+    .social-link h3 {
+        padding-bottom: 8px;
+    }
+    
+    .about-link{
+        align-items: flex-start;
+    }
+    
+    .official {
+        line-height: 1.3;
+        color: white;
+    }
+
+    .service-link,
+    .social-link {
+        line-height: 24px;
+    }
+
+    .foot {
+        gap: 0;
+    }
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Navbar */
+    nav {
+        padding: 30px 30px;
+    }
+
+    .menu {
+        display: block;
+        z-index: 1001;
+        
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+     
+
+      
+ nav ul {
+        position: fixed;
+        top: 0;
+        right: -300px;
+
+         width: 300px;
+        height: 500px;
+
+        background-color: rgb(24, 23, 23, 0.95);
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 100px 30px;
+        gap: 25px;
+
+        transition: right 0.4s ease;
+    }
+
+    nav ul.active {
+        right: 0;
+    }
+    /* .btn svg{
+        display: none;
+    } */
+     
+    /* .btn button {
+        display: none;
+    } */
+   .menu-btn{
+    display: none;
+   }
+   
+   .btn button{
+    padding: 18px 22px;
+   }
+    
+    /* Banner */
+    .banner {
+        height: 700px;
+    }
+
+    .banner-para {
+        margin-left: 5%;
+        top: 20%;
+    }
+
+    .banner-para h2 {
+        font-size: 64px;
+        width: 70%;
+    }
+
+
+    /* Home Repair */
+    .online-services {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .home-repair h2 {
+        width: 80%;
+        font-size: 42px;
+    }
+
+    .home-repair p {
+        width: 60%;
+        margin-right: 20px;
+        line-height: 1.2;
+        font-size: 17px;
+    }
+
+   .boxes{
+        gap: 15px;
+    }
+    .box-1{
+        flex: 2;
+    }
+    .box-1 img{
+        height: 450px;
+    }
+    .box-2{
+        padding-bottom: 32px;
+         flex: 2;
+         padding-left: 32px;
+    }
+    .box-2 p{
+        font-size: 20px;
+        flex: 2;
+        width: 90%;
+        
+    }
+    .box{
+        flex: 2;
+    }
+     .box-3,
+     .box-4 {
+        padding: 16px;
+     }
+    .box-3 h2,
+    .box-4 h2{
+        font-size: 48px;
+    }
+    .box-3 h3,
+    .box-4 h3{
+        padding-top: 24px;
+    }
+    .box-3 p,
+    .box-4 p{
+        padding: 12px 12px 12px 0;
+    }
+
+     .para h3,
+    .official h3,
+    .service-link h3,
+    .social-link h3{
+        font-size: 18px;
+    }
+
+    /* Services Cards */
+    .service-card {
+        width: 90%;
+        margin: 7% 5%;
+    }
+
+    .types h2 {
+        font-size: 42px;
+        width: 70%;
+        margin-top: 4px;
+    }
+    .icon svg{
+        height: 45px;
+        width: 45px;
+    }
+
+    .card {
+        width: 48%;
+        padding: 28px;
+    }
+    .btn-2{
+        display: block;
+    }
+
+    /* Portfolio */
+    .portfolio {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .portfolio-head{
+        flex-direction: column;
+    }
+
+    .portfolio-head h2 {
+        font-size: 42px;
+        width: 60%;
+    }
+
+    .portfolio-head p {
+        width: 45%;
+    }
+
+    .img-box {
+        height: 380px;
+    }
+
+    .img-box img {
+        width: 700px;
+    }
+
+    .orange-banner {
+        font-size: 55px;
+        padding: 50px 0;
+    }
+
+
+    /* Customer Order */
+    .services {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .customer-order h2 {
+        font-size: 42px;
+        width: 55%;
+        margin-top: 4px;
+    }
+
+    .left-side,
+    .right-side {
+        width: 47%;
+    }
+    .left-side p{
+        line-height: 1.4;
+        font-size: 16px;
+    }
+    .right-side{
+        padding-bottom: 20px;
+    }
+    .rating h3{
+        margin: 4px;
+    }
+    
+   iframe{
+    height: 400px;
+
+   }
+    /* Client */
+    .client h2 {
+        font-size: 42px;
+        width: 70%;
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+    }
+    .client h4{
+        padding-bottom: 0;
+    }
+
+    .slider {
+        width: 85%;
+    }
+    .slider-content{
+        margin-left: 0;
+    }
+    .client-service {
+        padding: 10px;
+    }
+
+    .client-service > p {
+        font-size: 14px;
+       padding:  20px 0 0 0;
+    
+    }
+    .commas img{
+        height: 50px;
+        width: 45px;
+    }
+    .customers-id{
+        padding: 24px  0;
+    }
+    .user h2{
+        font-size: 15px;
+    }
+    .user p{
+        margin-top: 5px;
+        font-size: 13px;
+
+    }
+    .section{
+        padding: 36px 0;
+    }
+
+    .user-img img{
+        height: 50px;
+        width: 50px;
+    }
+   
+
+    /* Team */
+    .team-work {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .worker {
+        width: 45%;
+        justify-content: center;
+        gap: 15px;
+        
+
+    }
+    .worker-img{
+        width: 47%;
+        height: 250px;
+        
+    }
+
+    .worker-img img {
+        width: 100%;
+       
+        
+    }
+
+    .engineer h2{
+        font-size: 18px;
+    }
+   .social-link svg{
+    height: 16px;
+    width: 16px;
+   }
+
+    .team-rate {
+        width: 48%;
+        padding: 15px;
+    }
+
+    .team-rate h2 {
+        font-size: 42px;
+        line-height: 1.3;
+        margin-top: 12px;
+    }
+
+
+    /* Innovation */ 
+
+    .empower {
+    width: 90%;
+    margin:7% 5%;
+    }
+
+    .empower h3{
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .empower h5{
+        font-size: 12px;
+    }
+    .innovation-card h4{
+        margin: 14px 0 12px;
+    }
+
+    /* Footer */
+    .footer,
+    .foot {
+       width: 90%;
+       margin: 5%;
+    }
+     
+    
+    .experts h2 {
+        font-size: 45px;
+        width: 70%;
+        padding: 24px 0;
+    }
+
+    .about-link {
+        gap: 15px;
+
+
+
+    }
+
+    .para {
+        width: 100%;
+    }
+
+    .official,
+    .service-link,
+    .social-link {
+        width: 33%;
+        
+    }
+
+    .para p {
+        font-size: 16px;
+    }
+    .foot{
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+
+
+    nav{
+        padding: 2.5rem 3.4rem;
+    }
+   
+    .online-services{
+        width: 90%;
+        margin: auto;
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+    .banner-para h2{
+        font-size: 70px;
+        width: 60%;
+    }
+    .home-repair h2{
+        width: 75%;
+        font-size: 48px;
+    }
+    .home-repair p{
+        width: 60%;
+        font-size: 18px;
+        margin-right: 20px;
+        line-height: 1.3;
+    }
+      .portfolio,
+     .service-card,
+     .services,
+      .empower{
+        width: 90%;
+        margin: 5%;
+    }
+     .team-work,
+     .footer,
+     .foot{
+        width: 90%;
+        margin: auto;
+     }
+   .btn button {
+    font-size: 12px;
+   }
+    
+    .types h2{
+        font-size: 47px;
+        width: 65%;
+        margin-top: 4px;
+    }
+    .boxes{
+        gap: 20px;
+    }
+    .box-1{
+        flex: 2;
+    }
+    .box-1 img{
+        height: 450px;
+    }
+    .box-2{
+        padding-bottom: 24px;
+         flex: 2;
+         padding-left: 32px;
+    }
+    .box-2 p{
+        font-size: 24px;
+        flex: 2;
+        width: 90%;
+        
+    }
+    .para .btn-2 button{
+        display: block;
+    }
+    .box{
+        flex: 2;
+    }
+     .box-3,
+     .box-4 {
+        padding: 16px;
+     }
+    .box-3 h2,
+    .box-4 h2{
+        font-size: 48px;
+    }
+    .box-3 h3,
+    .box-4 h3{
+        padding-top: 24px;
+    }
+    .box-3 p,
+    .box-4 p{
+        padding: 14px 14px 14px 0;
+    }
+    .cards{
+        width: 100%;
+        gap: 15px;
+    }
+    .icon svg{
+        height: 50px;
+        width: 50px;
+    }
+    icon{
+        padding: 14px;
+    }
+    .card-para h3{
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    .card-para p{
+        font-size: 16px;
+    }
+    .portfolio-head{
+        flex-direction: column;
+        justify-content: center;
+      
+       
+    }
+    .portfolio-head h2{
+        width: 70%;
+        font-size: 48px;
+        
+    }
+    .img-box{
+   height: 450px;
+    }
+    .orange-banner{
+        font-size: 54px;
+        padding: 60px 0;
+    }
+    .customer-order h2{
+        width: 55%;
+        margin-top: 4px;
+        font-size: 48px;
+    }
+    .left-side p{
+        line-height: 1.5;
+        margin-top: 16px;
+    }
+    .right-side{
+        gap: 10px;
+    }
+    iframe{
+        height: 500px;
+    }
+    .client h2{
+        width: 60%;
+        margin-bottom: 2.5rem;
+        font-size: 48px;
+        margin-top: 4px;
+    }
+    .client h4{
+        padding-bottom: 4px;
+    }
+    .commas img{
+        height: 50px;
+    }
+    .client-service>p{
+        line-height: 1.4;
+        font-size: 16px;
+        padding: 20px 12px 0 0;
+    }
+    .client-service{
+        padding: 20px;
+    }
+    .user-img img{
+        height: 50px;
+        width: 50px;
+    }
+    .user h2{
+        font-size: 16px;
+    }
+    .user p{
+        margin-top: 4px;
+    }
+    .section{
+        padding: 48px 0;
+    }
+    .worker{
+        gap: 15px;
+    }
+    .worker-img{
+        height: 250px;
+        width: 47%;
+    }
+    .team-rate h2{
+        font-size: 42px;
+        width:100%;
+        line-height: 1.2;
+        margin: 12px 0 24px;
+    }
+    .team-rate p{
+        line-height: 1.4;
+
+    }
+    .team-rate button{
+        padding: 16px 20px;
+    }
+    .innovation-card h4{
+        margin: 16px 0;
+
+    }
+    .empower h3{
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    .empower h5{
+        font-size: 12px;
+    }
+    .second-img{
+        height: 250px;
+    }
+    .second-img img{
+        height: 250px;
+    }
+    .experts h2{
+        font-size: 48px;
+        padding: 0;
+    }
+    .para p{
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .para button{
+        padding: 15px 20px;
+    }
+    .official{
+        width: 22%;
+        padding-left: 30px;
+        margin-top: 8px;
+    }
+    .official h3{
+        padding-bottom: 16px;
+    }
+}
